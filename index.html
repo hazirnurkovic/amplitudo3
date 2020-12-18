@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./fontawesome/css/all.css">
+  <title></title>
+</head>
+<body>
+
+  <div class="container mt-5">
+
+  	<div class="naslov mt-4">
+  		<i class="fa fa-film fa-2x"></i> 
+  		<h1 id="naslov">The Open Movie DataBase</h1>
+  	</div>
+
+  	<div class="tijelo mt-4">
+  		<p> Svi podaci o Vasim omiljenim filmovima i serijama na jednom mjestu </p>
+
+	  	<div class="form form-inline mt-5">
+	  		<input type="text" placeholder="Unesite kriterijum pretrage" name="ime" id="ime">	
+	  		<select id="select">
+	  			<option value="movie" id="film">Filmovi</option>
+	  			<option value="series" id="serija">Serije</option>
+	  		</select>	
+	  		<input type="number" placeholder="Godina" name="godina" id="godina">
+	  		<button class="button" onclick="pretraga()"> <i class="fa fa-search fa-spin"></i>  Pretraga</button>
+	  	</div>
+
+	  	<div class="bez_unosa mt-3"></div>
+	  	<div class="error"></div>
+	</div>
+
+  <div class="film">
+
+  	<div class="row">
+
+  		<div class="lijevi col">
+  			<img id="slika" src="">
+  		</div>
+
+  		<div class="desni col">
+
+  			<table class="table table-borderless">
+  				<tr>
+  					<td>Naslov</td>
+  					<td class="naslovFilmaSerije"></td>
+  				</tr>
+  				<tr>
+  					<td>Godina</td>
+  					<td class="god"></td>
+  				</tr>
+  				<tr>
+  					<td>Datum objavljivanja</td>
+  					<td class="datum"></td>
+  				</tr>
+  				<tr>
+  					<td>Trajanje</td>
+  					<td class="trajanje"></td>
+  				</tr>
+  				<tr>
+  					<td>Reziser</td>
+  					<td class="reziser"></td>
+  				</tr>
+  				<tr>
+  					<td>Glumci</td>
+  					<td class="glumci"></td>
+  				</tr>
+  				<tr>
+  					<td>Radnja</td>
+  					<td class="radnja"></td>
+  				</tr>
+  				<tr>
+  					<td class="brSezona1">Broj sezona</td>
+  					<td class="brSezona"></td>
+  				</tr>
+  				<tr>
+  					<td>Ocjena gledalaca</td>  					
+  				</tr>
+  				
+  				
+  			</table>
+
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="app.js"></script>
+  <!-- JS za JQuery i Bootstrap -->
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
