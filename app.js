@@ -63,6 +63,14 @@ function pretraga()
 					$(".glumci").html(glumci);
 					$(".radnja").html(radnja);
 					$(".brSezona").html(brojSezona);
+					if(tip==="movie")
+					{
+						$(".brSezona1").hide();
+					}
+					else
+					{
+						$(".brSezona1").show();
+					}
 					response_json_parsed.Ratings.forEach(function(rating)
 					{
 						$(".table").append(`
