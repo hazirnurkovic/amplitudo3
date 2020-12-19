@@ -66,10 +66,12 @@ function pretraga()
 					if(tip==="movie")
 					{
 						$(".brSezona1").hide();
+						$(".brSezona").hide();
 					}
 					else
 					{
 						$(".brSezona1").show();
+						$(".brSezona").show();
 					}
 					response_json_parsed.Ratings.forEach(function(rating)
 					{
